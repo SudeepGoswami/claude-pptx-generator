@@ -1,0 +1,318 @@
+{
+    "brand": {
+      "name": "Traefik Labs",
+      "tagline": "Run Your AI & APIs Anywhere",
+      "website": "https://traefik.io",
+      "description": "Cloud-native API Gateway, AI Gateway, and MCP Gateway"
+    },
+    "palette": {
+      "dark": {
+        "surface": {
+          "primary": "#050A22",
+          "secondary": "#000D24",
+          "tertiary": "#12162A",
+          "elevated": "#242A4B",
+          "code": "#000D24"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#F8F8F2",
+          "muted": "#78909C",
+          "faint": "#595959"
+        },
+        "accent": {
+          "primary": "#BB64F9",
+          "primaryHover": "#B140F5",
+          "secondary": "#8C35AA",
+          "highlight": "#EEFF41",
+          "warning": "#F5AB35",
+          "danger": "#9B3D3D",
+          "success": "#6AA84F",
+          "info": "#4285F4"
+        },
+        "border": {
+          "default": "#595959",
+          "subtle": "#283264",
+          "accent": "#BB64F9"
+        }
+      },
+      "light": {
+        "surface": {
+          "primary": "#FFFFFF",
+          "secondary": "#F8F8F2",
+          "tertiary": "#EEEEEE",
+          "elevated": "#FFFFFF",
+          "code": "#F8F8F2"
+        },
+        "text": {
+          "primary": "#000000",
+          "secondary": "#212121",
+          "muted": "#78909C",
+          "faint": "#A4ACB3"
+        },
+        "accent": {
+          "primary": "#BB64F9",
+          "primaryHover": "#8C35AA",
+          "secondary": "#561561",
+          "highlight": "#EEFF41",
+          "warning": "#E69138",
+          "danger": "#9B3D3D",
+          "success": "#6AA84F",
+          "info": "#4285F4"
+        },
+        "border": {
+          "default": "#D1D2D3",
+          "subtle": "#EEEEEE",
+          "accent": "#BB64F9"
+        }
+      },
+      "syntax": {
+        "comment": "#D4D0AB",
+        "keyword": "#F5AB35",
+        "string": "#ABE338",
+        "variable": "#FFA07A",
+        "function": "#569CD6",
+        "default": "#F8F8F2",
+        "highlight": "#EEFF41"
+      },
+      "chart": {
+        "series": [
+          "#BB64F9",
+          "#ABE338",
+          "#F5AB35",
+          "#4285F4",
+          "#0097A7",
+          "#78909C"
+        ],
+        "positive": "#6AA84F",
+        "negative": "#9B3D3D",
+        "neutral": "#78909C"
+      }
+    },
+    "typography": {
+      "fonts": {
+        "display": "Rubik",
+        "body": "Rubik",
+        "mono": "Consolas"
+      },
+      "fallbacks": {
+        "display": "Arial, sans-serif",
+        "body": "Arial, sans-serif",
+        "mono": "Courier New, monospace"
+      },
+      "scale": {
+        "hero": {
+          "size": "48px",
+          "weight": "700",
+          "lineHeight": "1.1"
+        },
+        "title": {
+          "size": "28px",
+          "weight": "700",
+          "lineHeight": "1.2"
+        },
+        "subtitle": {
+          "size": "23px",
+          "weight": "600",
+          "lineHeight": "1.3"
+        },
+        "heading": {
+          "size": "18px",
+          "weight": "600",
+          "lineHeight": "1.4"
+        },
+        "body": {
+          "size": "16px",
+          "weight": "400",
+          "lineHeight": "1.5"
+        },
+        "bodyLarge": {
+          "size": "18px",
+          "weight": "400",
+          "lineHeight": "1.5"
+        },
+        "small": {
+          "size": "14px",
+          "weight": "400",
+          "lineHeight": "1.5"
+        },
+        "code": {
+          "size": "11px",
+          "weight": "700",
+          "lineHeight": "1.4"
+        },
+        "caption": {
+          "size": "10px",
+          "weight": "400",
+          "lineHeight": "1.4"
+        }
+      },
+      "weights": {
+        "regular": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700"
+      }
+    },
+    "spacing": {
+      "slide": {
+        "margin": "40px",
+        "gutter": "24px"
+      },
+      "component": {
+        "padding": {
+          "sm": "12px",
+          "md": "20px",
+          "lg": "32px"
+        },
+        "gap": {
+          "sm": "8px",
+          "md": "16px",
+          "lg": "24px"
+        }
+      }
+    },
+    "borders": {
+      "radius": {
+        "none": "0",
+        "sm": "4px",
+        "md": "8px",
+        "lg": "12px",
+        "card": "12px",
+        "code": "12px"
+      },
+      "width": {
+        "thin": "1px",
+        "medium": "2px",
+        "thick": "4px"
+      },
+      "accentBar": {
+        "width": "4px",
+        "position": "left"
+      }
+    },
+    "effects": {
+      "shadows": {
+        "card": "0 4px 20px rgba(0, 0, 0, 0.3)",
+        "elevated": "0 8px 32px rgba(0, 0, 0, 0.4)",
+        "codeBlock": "0 4px 16px rgba(0, 0, 0, 0.5)"
+      },
+      "gradients": {
+        "purpleGlow": "radial-gradient(ellipse at center, rgba(187, 100, 249, 0.3) 0%, transparent 70%)",
+        "sectionDivider": "linear-gradient(135deg, #050A22 0%, #12162A 50%, #242A4B 100%)"
+      }
+    },
+    "components": {
+      "codeBlock": {
+        "background": "#000D24",
+        "border": "1px solid #595959",
+        "borderRadius": "12px",
+        "padding": "20px",
+        "terminalDots": {
+          "show": true,
+          "colors": [
+            "#9B3D3D",
+            "#FFAB40",
+            "#6AA84F"
+          ],
+          "size": "10px",
+          "gap": "8px"
+        }
+      },
+      "card": {
+        "background": "#12162A",
+        "border": "1px solid #283264",
+        "borderRadius": "12px",
+        "padding": "24px",
+        "accentBar": {
+          "show": true,
+          "color": "#BB64F9",
+          "width": "4px"
+        }
+      },
+      "callout": {
+        "background": "rgba(187, 100, 249, 0.1)",
+        "border": "1px solid #BB64F9",
+        "borderRadius": "8px",
+        "padding": "16px"
+      },
+      "badge": {
+        "background": "#BB64F9",
+        "color": "#FFFFFF",
+        "borderRadius": "4px",
+        "padding": "4px 8px",
+        "fontSize": "12px",
+        "fontWeight": "600"
+      },
+      "stat": {
+        "valueColor": "#EEFF41",
+        "valueSize": "48px",
+        "valueWeight": "700",
+        "labelColor": "#78909C",
+        "labelSize": "14px"
+      }
+    },
+    "slideTypes": {
+      "title": {
+        "background": "#050A22",
+        "backgroundEffect": "purpleGlow",
+        "logoPosition": "top-right",
+        "titleColor": "#FFFFFF",
+        "subtitleColor": "#EEFF41"
+      },
+      "sectionDivider": {
+        "background": "sectionDivider",
+        "backgroundEffect": "purpleGlow",
+        "logoPosition": "top-right",
+        "titleColor": "#FFFFFF",
+        "numberColor": "#BB64F9"
+      },
+      "content": {
+        "background": "#050A22",
+        "logoPosition": "top-right",
+        "titleColor": "#FFFFFF",
+        "subtitleColor": "#EEFF41",
+        "bodyColor": "#F8F8F2"
+      },
+      "closing": {
+        "background": "#050A22",
+        "backgroundEffect": "purpleGlow",
+        "logoPosition": "center",
+        "ctaColor": "#FFFFFF"
+      }
+    },
+    "assets": {
+      "logos": {
+        "dark": "logowhite.png",
+        "light": "logodark.png"
+      }
+    },
+    "voice": {
+      "elevenLabs": {
+        "voiceId": "pNInz6obpgDQGcFmaJgB",
+        "voiceName": "Adam",
+        "stability": 0.55,
+        "similarityBoost": 0.75,
+        "styleExaggeration": 0.2
+      },
+      "pacing": {
+        "wordsPerMinute": 150,
+        "pauseShort": 0.3,
+        "pauseMedium": 0.6,
+        "pauseLong": 1.0
+      }
+    },
+    "export": {
+      "presentation": {
+        "width": 1920,
+        "height": 1080,
+        "format": "16:9"
+      },
+      "video": {
+        "resolution": "1920x1080",
+        "fps": 30,
+        "format": "mp4",
+        "codec": "libx264"
+      }
+    }
+  }

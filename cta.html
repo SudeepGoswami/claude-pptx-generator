@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><link rel="stylesheet" href="brand.css"></head>
+<body class="col bg-surface" style="width: 960px; height: 540px; position: relative;">
+  <!-- Logo -->
+  <img src="logowhite.png" style="position: absolute; top: 24px; right: 24px; height: 22px;">
+  
+  <!-- Corner accents -->
+  <div style="position: absolute; top: 0; left: 0; width: 250px; height: 250px; background: linear-gradient(135deg, rgba(187,100,249,0.12) 0%, transparent 70%);"></div>
+  <div style="position: absolute; bottom: 0; right: 0; width: 350px; height: 350px; background: linear-gradient(315deg, rgba(238,255,65,0.08) 0%, transparent 70%);"></div>
+  
+  <!-- Content - FIXED: Use absolute centering to prevent text overlap -->
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%; padding: 0 60px;">
+    <p style="font-size: 14px; color: #BB64F9; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">{{SECTION_LABEL}}</p>
+    
+    <h1 style="font-size: 30px; color: #FFFFFF; font-weight: 700; margin: 0 0 24px 0; line-height: 1.35;">{{MAIN_QUESTION}}</h1>
+    
+    <div style="display: inline-block; background: linear-gradient(180deg, #12162A 0%, #0a0e1a 100%); border-radius: 12px; padding: 28px 40px; border: 2px solid #BB64F9;">
+      <p style="font-size: 20px; color: #F8F8F2; margin: 0 0 8px 0;">{{ANSWER_LINE1}}</p>
+      <p style="font-size: 22px; color: #EEFF41; margin: 0; font-weight: 700;">{{ANSWER_LINE2}}</p>
+    </div>
+    
+    <div style="margin-top: 32px; display: flex; align-items: center; justify-content: center; gap: 16px;">
+      <div style="width: 40px; height: 2px; background: linear-gradient(90deg, transparent, #BB64F9);"></div>
+      <p style="font-size: 18px; color: #BB64F9; margin: 0; font-weight: 600;">{{URL}}</p>
+      <div style="width: 40px; height: 2px; background: linear-gradient(90deg, #BB64F9, transparent);"></div>
+    </div>
+  </div>
+  
+  <!-- Bottom bar -->
+  <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #BB64F9, #EEFF41, #ABE338, #BB64F9);"></div>
+</body>
+</html>

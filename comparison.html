@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><link rel="stylesheet" href="brand.css"></head>
+<body class="col bg-surface" style="width: 960px; height: 540px; position: relative;">
+  <!-- Logo -->
+  <img src="logowhite.png" style="position: absolute; top: 24px; right: 24px; height: 22px;">
+  
+  <!-- Title - FIXED: Start at 56px to clear logo line -->
+  <div style="padding: 56px 24px 0 24px;" class="fit">
+    <h1 style="font-size: 32px; color: #FFFFFF; font-weight: 700; margin: 0;">{{TITLE}}</h1>
+  </div>
+  
+  <!-- Comparison columns - FIXED: align-items: stretch + min-height -->
+  <div class="fill-height row" style="padding: 16px 24px; gap: 24px; align-items: stretch;">
+    <!-- Left: Before/Old -->
+    <div style="flex: 1; min-height: 240px; background: linear-gradient(180deg, #12162A 0%, #0a0e1a 100%); border-radius: 12px; padding: 32px; border-left: 5px solid #78909C; display: flex; flex-direction: column;">
+      <p style="font-size: 12px; color: #78909C; margin: 0 0 20px 0; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">{{LEFT_LABEL}}</p>
+      <p style="font-size: 32px; color: #78909C; margin: 0; font-weight: 600; line-height: 1.2;">{{LEFT_INTRO}}</p>
+      <p style="font-size: 36px; color: #F8F8F2; margin: 4px 0 0 0; font-weight: 700; line-height: 1.2;">{{LEFT_MAIN}}</p>
+      <div style="flex: 1;"></div>
+      <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid #283264;">
+        <p style="font-size: 13px; color: #78909C; margin: 0;">{{LEFT_FOOTER}}</p>
+      </div>
+    </div>
+    
+    <!-- Arrow -->
+    <div style="flex: 0; display: flex; align-items: center;">
+      <div style="width: 48px; height: 48px; background: rgba(187,100,249,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <p style="font-size: 24px; color: #BB64F9; margin: 0;">â†’</p>
+      </div>
+    </div>
+    
+    <!-- Right: After/New -->
+    <div style="flex: 1; min-height: 240px; background: linear-gradient(180deg, #1a1040 0%, #0a0e1a 100%); border-radius: 12px; padding: 32px; border-left: 5px solid #BB64F9; display: flex; flex-direction: column;">
+      <p style="font-size: 12px; color: #BB64F9; margin: 0 0 20px 0; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">{{RIGHT_LABEL}}</p>
+      <p style="font-size: 32px; color: #78909C; margin: 0; font-weight: 600; line-height: 1.2;">{{RIGHT_INTRO}}</p>
+      <p style="font-size: 36px; color: #EEFF41; margin: 4px 0 0 0; font-weight: 700; line-height: 1.2;">{{RIGHT_MAIN}}</p>
+      <div style="flex: 1;"></div>
+      <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid #BB64F9;">
+        <p style="font-size: 13px; color: #BB64F9; margin: 0;">{{RIGHT_FOOTER}}</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom callout -->
+  <div style="padding: 0 24px 48px 24px; background: linear-gradient(180deg, transparent, rgba(245,171,53,0.08));">
+    <div style="background: rgba(245,171,53,0.15); padding: 14px 20px; border-radius: 8px; border-left: 4px solid #F5AB35;">
+      <p style="font-size: 14px; color: #F5AB35; margin: 0;">{{CALLOUT}}</p>
+    </div>
+  </div>
+</body>
+</html>

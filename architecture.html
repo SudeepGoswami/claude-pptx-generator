@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><link rel="stylesheet" href="brand.css"></head>
+<body class="col bg-surface" style="width: 960px; height: 540px; position: relative;">
+  <!-- Logo -->
+  <img src="logowhite.png" style="position: absolute; top: 24px; right: 24px; height: 22px;">
+  
+  <!-- Title - FIXED: Start at 56px to clear logo line -->
+  <div style="padding: 56px 24px 0 24px;" class="fit">
+    <h1 style="font-size: 32px; color: #FFFFFF; font-weight: 700; margin: 0;">{{TITLE}}</h1>
+    <p style="font-size: 14px; color: #EEFF41; margin: 6px 0 0 0;">{{SUBTITLE}}</p>
+  </div>
+  
+  <!-- Architecture components - FIXED: align-items: stretch + min-height -->
+  <div class="fill-height col" style="padding: 12px 24px; gap: 12px;">
+    <div class="row" style="flex: 1; gap: 0; align-items: stretch;">
+      
+      <!-- Component 1 (Purple) -->
+      <div style="flex: 1; min-height: 200px; background: linear-gradient(180deg, #1a1040 0%, #12162A 100%); border-radius: 12px 0 0 12px; padding: 20px; border: 2px solid #BB64F9; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <p style="font-size: 32px; margin: 0 0 8px 0;">{{COMP1_ICON}}</p>
+        <p style="font-size: 18px; color: #BB64F9; margin: 0 0 10px 0; font-weight: 700;">{{COMP1_NAME}}</p>
+        <p style="font-size: 14px; color: #F8F8F2; margin: 0 0 12px 0; font-weight: 500;">{{COMP1_DESC}}</p>
+        <div style="flex: 1;"></div>
+        <div style="background: rgba(187,100,249,0.1); padding: 10px; border-radius: 6px; width: 100%;">
+          <p style="font-size: 11px; color: #BB64F9; margin: 0; line-height: 1.5;">{{COMP1_FEATURES}}</p>
+        </div>
+      </div>
+      
+      <!-- Component 2 (Green) -->
+      <div style="flex: 1; min-height: 200px; background: linear-gradient(180deg, #0a1a0a 0%, #12162A 100%); padding: 20px; border-top: 2px solid #ABE338; border-bottom: 2px solid #ABE338; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <p style="font-size: 32px; margin: 0 0 8px 0;">{{COMP2_ICON}}</p>
+        <p style="font-size: 18px; color: #ABE338; margin: 0 0 10px 0; font-weight: 700;">{{COMP2_NAME}}</p>
+        <p style="font-size: 14px; color: #F8F8F2; margin: 0 0 12px 0; font-weight: 500;">{{COMP2_DESC}}</p>
+        <div style="flex: 1;"></div>
+        <div style="background: rgba(171,227,56,0.1); padding: 10px; border-radius: 6px; width: 100%;">
+          <p style="font-size: 11px; color: #ABE338; margin: 0; line-height: 1.5;">{{COMP2_FEATURES}}</p>
+        </div>
+      </div>
+      
+      <!-- Component 3 (Blue) -->
+      <div style="flex: 1; min-height: 200px; background: linear-gradient(180deg, #0a1a2a 0%, #12162A 100%); border-radius: 0 12px 12px 0; padding: 20px; border: 2px solid #4285F4; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <p style="font-size: 32px; margin: 0 0 8px 0;">{{COMP3_ICON}}</p>
+        <p style="font-size: 18px; color: #4285F4; margin: 0 0 10px 0; font-weight: 700;">{{COMP3_NAME}}</p>
+        <p style="font-size: 14px; color: #F8F8F2; margin: 0 0 12px 0; font-weight: 500;">{{COMP3_DESC}}</p>
+        <div style="flex: 1;"></div>
+        <div style="background: rgba(66,133,244,0.1); padding: 10px; border-radius: 6px; width: 100%;">
+          <p style="font-size: 11px; color: #4285F4; margin: 0; line-height: 1.5;">{{COMP3_FEATURES}}</p>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Bottom callout -->
+    <div style="background: linear-gradient(90deg, rgba(245,171,53,0.15), rgba(245,171,53,0.05)); border-radius: 10px; padding: 16px 20px; border-left: 4px solid #F5AB35;">
+      <p style="font-size: 15px; color: #F5AB35; margin: 0 0 6px 0; font-weight: 600;">{{CALLOUT_TITLE}}</p>
+      <p style="font-size: 12px; color: #F8F8F2; margin: 0;">{{CALLOUT_BODY}}</p>
+    </div>
+  </div>
+</body>
+</html>
