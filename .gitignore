@@ -1,0 +1,27 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Generated outputs
+*.pptx
+*.pdf
+output/
+presentations/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Claude Code
+.claude/
