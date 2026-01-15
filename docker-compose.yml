@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  pptx-generator:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - PORT=3000
+      - OUTPUT_DIR=/app/api/output
+      - LOG_LEVEL=info
+    volumes:
+      - ./output:/app/api/output
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

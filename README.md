@@ -102,6 +102,87 @@ Use `brand-extraction.md` to extract a new brand kit from existing presentations
 3. Capture component patterns (cards, code blocks, badges)
 4. Export as `brand.config.json` and CSS file
 
+## API Service
+
+This project also includes a standalone API service that can generate presentations programmatically.
+
+### Quick Start (Docker)
+
+```bash
+# Set your Anthropic API key
+export ANTHROPIC_API_KEY=sk-ant-...
+
+# Build and run
+docker-compose up --build
+```
+
+### Quick Start (Local)
+
+```bash
+cd api
+npm install
+ANTHROPIC_API_KEY=sk-ant-... npm start
+```
+
+### API Endpoints
+
+#### POST /api/generate
+Create a new presentation job.
+
+```bash
+curl -X POST http://localhost:3000/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "source": "https://example.com/blog/article",
+    "sourceType": "url"
+  }'
+```
+
+Response:
+```json
+{
+  "jobId": "uuid-here",
+  "status": "queued",
+  "statusUrl": "/api/jobs/uuid-here"
+}
+```
+
+#### GET /api/jobs/:id
+Poll job status.
+
+```bash
+curl http://localhost:3000/api/jobs/{jobId}
+```
+
+Response:
+```json
+{
+  "jobId": "uuid-here",
+  "status": "processing",
+  "progress": {
+    "phase": "Narrative Engineering",
+    "phaseNumber": 2,
+    "totalPhases": 4
+  }
+}
+```
+
+#### GET /api/jobs/:id/download
+Download completed PPTX.
+
+```bash
+curl -O http://localhost:3000/api/jobs/{jobId}/download
+```
+
+### Environment Variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `ANTHROPIC_API_KEY` | Claude API key (required) | - |
+| `PORT` | Server port | 3000 |
+| `OUTPUT_DIR` | Directory for generated files | ./output |
+| `LOG_LEVEL` | Logging level (debug/info/warn/error) | info |
+
 ## Requirements
 
 When using this in Claude Projects:
